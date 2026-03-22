@@ -1,0 +1,28 @@
+┌─────────────┐
+│   Create    │ You start with a task
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│    Init     │ Environment spun up, code cloned
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Working   │ Agent executes (can be many hours)
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Review    │ Agent pauses for your review (optional)
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Complete   │ Task done, results available
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Cleanup   │ Environment destroyed (or kept)
+└─────────────┘

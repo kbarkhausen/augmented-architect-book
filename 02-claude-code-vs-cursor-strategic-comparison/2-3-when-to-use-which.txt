@@ -1,0 +1,13 @@
+Morning: Cursor for active development
+- Interactive coding sessions
+- Visual review of AI suggestions
+- Quick iterations
+
+Afternoon: Claude Code for autonomous tasks
+- "Implement these 5 tickets" → subagents work in parallel
+- PR reviews run in background
+- Test generation while you're in meetings
+
+Evening: Claude Code GitHub Actions
+- Overnight autonomous agents pick up issues
+- PRs ready for review in the morning

@@ -1,0 +1,7 @@
+
+## Deployment
+- Staging: `npm run deploy:staging`
+- Production: Requires approval via Slack #deploys
+
+## Coding Standards
+Follow ESLint config: @company/eslint-config

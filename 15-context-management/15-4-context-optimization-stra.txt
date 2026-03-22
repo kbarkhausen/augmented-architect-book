@@ -1,0 +1,5 @@
+.cursor/rules/
+├── core.mdc (alwaysApply: true, ~50 lines)
+├── typescript.mdc (globs: *.ts)
+├── react.mdc (globs: *.tsx)
+└── testing.mdc (globs: *.test.*)

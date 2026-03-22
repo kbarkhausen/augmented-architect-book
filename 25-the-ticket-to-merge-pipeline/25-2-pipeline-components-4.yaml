@@ -1,0 +1,19 @@
+review:
+  needs: quality
+  steps:
+    - name: AI Review
+      uses: anthropics/claude-code-action@v1
+      id: ai-review
+      with:
+        mode: review
+        criteria: |
+          - Security vulnerabilities
+          - Error handling completeness
+          - Test coverage adequacy
+          - Performance concerns
+          - Breaking changes
+          
+    - name: Request Human Review (if needed)
+      if: steps.ai-review.outputs.concerns == 'true'
+      run: |
+        gh pr edit ${{ env.PR_NUMBER }} --add-reviewer ${{ env.TECH_LEAD }}

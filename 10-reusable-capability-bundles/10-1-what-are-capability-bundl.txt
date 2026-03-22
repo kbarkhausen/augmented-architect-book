@@ -1,0 +1,8 @@
+my-capability/
+├── SKILL.md           # Main instructions
+├── tools/             # MCP tools (optional)
+│   └── tool-server.js
+├── commands/          # Custom commands (optional)
+│   └── my-command.md
+└── examples/          # Usage examples (optional)
+    └── example.md

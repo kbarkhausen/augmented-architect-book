@@ -1,0 +1,6 @@
+{
+  "cursor.tabComplete.enabled": true,
+  "cursor.tabComplete.delay": 300,        // ms before suggesting
+  "cursor.tabComplete.multiLine": true,   // suggest full functions
+  "cursor.tabComplete.trigger": "always"  // or "onDemand"
+}

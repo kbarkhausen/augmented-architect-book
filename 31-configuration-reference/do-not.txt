@@ -1,0 +1,6 @@
+
+## Coding Standards
+[Key conventions]
+
+## Do NOT
+[Things to avoid]

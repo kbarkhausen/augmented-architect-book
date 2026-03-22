@@ -1,0 +1,19 @@
+# Trigger conditions
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  implement:
+    # Simple filter: trigger on specific label
+    if: github.event.label.name == 'ready-for-ai'
+    runs-on: ubuntu-latest
+    steps:
+      # Add a step to check for blocking labels if needed
+      - name: Check for blockers
+        run: |
+          LABELS="${{ join(github.event.issue.labels.*.name, ',') }}"
+          if [[ "$LABELS" == *"needs-design"* ]] || [[ "$LABELS" == *"blocked"* ]]; then
+            echo "Issue has blocking labels, skipping"
+            exit 1
+          fi

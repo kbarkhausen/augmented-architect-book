@@ -1,0 +1,54 @@
+
+## Coding Standards
+
+### TypeScript
+- Strict mode enabled (`strict: true`)
+- No `any` without explanatory comment
+- Prefer `interface` over `type` for object shapes
+- Explicit return types on exported functions
+
+### React
+- Functional components only
+- Props interface named `{Component}Props`
+- Custom hooks for reusable logic (>10 lines)
+- Colocate tests with components
+
+### API
+- RESTful conventions
+- Consistent error responses (see `apps/api/src/lib/errors.ts`)
+- Input validation with Zod
+- Rate limiting on public endpoints
+
+### Database
+- Migrations for all schema changes
+- Soft delete where possible (`deletedAt`)
+- Audit columns: `createdAt`, `updatedAt`, `createdBy`
+
+## Testing Requirements
+
+- All new features need tests
+- Bug fixes need regression tests
+- Coverage target: 80% for business logic
+- E2E tests for critical user flows
+- Use factories for test data
+
+## Current Focus (March 2026)
+
+- Implementing multi-tenant support
+- Performance optimization on dashboard queries
+- GraphQL migration for specific endpoints
+
+## Known Issues
+
+- **Prisma + JSON**: Use plain objects in tests
+- **Redis in tests**: Use mock, not real connection
+- **Legacy routes**: `/api/v1/*` deprecated
+
+## Do NOT
+
+- Add dependencies without discussion
+- Modify `infra/` without DevOps review
+- Use `console.log` (use logger service)
+- Commit `.env` files
+- Write raw SQL (use Prisma)
+- Skip tests for "simple" changes

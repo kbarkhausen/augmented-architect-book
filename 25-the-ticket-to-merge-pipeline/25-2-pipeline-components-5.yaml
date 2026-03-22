@@ -1,0 +1,20 @@
+merge:
+  needs: review
+  if: needs.review.outputs.approved == 'true'
+  steps:
+    - name: Auto-Merge
+      run: |
+        gh pr merge ${{ env.PR_NUMBER }} \
+          --squash \
+          --delete-branch
+          
+    - name: Close Issue
+      run: |
+        gh issue close ${{ github.event.issue.number }} \
+          --comment "✅ Implemented and merged. See PR #${{ env.PR_NUMBER }}"
+          
+    - name: Notify Team
+      run: |
+        # Post to Slack, Teams, etc.
+        curl -X POST ${{ secrets.SLACK_WEBHOOK }} \
+          -d '{"text": "Issue #${{ github.event.issue.number }} auto-implemented and merged"}'

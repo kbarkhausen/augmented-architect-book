@@ -1,0 +1,9 @@
+├── System instructions (~2,000 tokens)
+├── Matched rules (~500-2,000 tokens)
+├── Memories (~200-500 tokens)
+├── Active file contents (~variable)
+├── @ references (~variable)
+├── Conversation history (~variable)
+└── Your prompt (~variable)
+────────────────────────────────
+Total: Must fit in model's context window

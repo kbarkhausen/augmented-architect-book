@@ -1,0 +1,18 @@
+{
+  "cursor.yolo.enabled": true,
+  "cursor.yolo.allowList": [
+    "npm run *",
+    "pnpm *",
+    "git add *",
+    "git commit *",
+    "npx jest *",
+    "npx playwright *"
+  ],
+  "cursor.yolo.denyList": [
+    "rm -rf *",
+    "sudo *",
+    "* --force",
+    "git push *",
+    "npm publish *"
+  ]
+}

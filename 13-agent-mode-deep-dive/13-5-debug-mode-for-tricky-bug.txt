@@ -1,0 +1,1 @@
+Composer → Enter bug description → Click "Debug" mode

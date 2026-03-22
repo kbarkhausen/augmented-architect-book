@@ -1,0 +1,7 @@
+You: What does this useEffect do? @src/components/Dashboard.tsx
+
+Cursor: This useEffect has two responsibilities:
+1. Fetches dashboard data on mount and when userId changes
+2. Sets up a WebSocket subscription for real-time updates
+   
+The cleanup function disconnects the WebSocket to prevent memory leaks...

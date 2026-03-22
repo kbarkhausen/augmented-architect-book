@@ -1,0 +1,4 @@
+1. Use Copilot for rapid line completions as you type
+2. Use Cursor Chat for understanding code
+3. Use Cursor Agent for feature implementation
+4. Use Cursor Composer for coordinated multi-file changes

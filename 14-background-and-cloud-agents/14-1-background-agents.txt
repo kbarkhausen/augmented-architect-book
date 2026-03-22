@@ -1,0 +1,1 @@
+Composer (Cmd+I) → Enable "Run in background" toggle → Enter task

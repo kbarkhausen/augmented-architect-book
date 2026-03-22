@@ -1,0 +1,4 @@
+// .cursor/settings.json
+{
+  "cursor.composer.defaultMode": "agent"
+}

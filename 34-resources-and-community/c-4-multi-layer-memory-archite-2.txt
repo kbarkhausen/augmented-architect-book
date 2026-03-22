@@ -1,0 +1,11 @@
+project/
+├── CLAUDE.md              # Project overview, read every session
+├── AGENTS.md              # Cross-tool instructions
+└── memory-bank/
+    ├── projectbrief.md    # Core mission and scope
+    ├── productContext.md  # Why we're building this
+    ├── activeContext.md   # Current focus (update frequently)
+    ├── systemPatterns.md  # Architecture decisions
+    ├── techContext.md     # Stack, tools, constraints
+    ├── progress.md        # What's done, what's next
+    └── decisionLog.md     # Key decisions and rationale

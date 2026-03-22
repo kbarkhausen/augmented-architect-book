@@ -1,0 +1,19 @@
+// .cursor/mcp.json
+{
+  "servers": {
+    "github": {
+      "command": "npx",
+      "args": ["@anthropic-ai/mcp-server-github"],
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["@anthropic-ai/mcp-server-postgres"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    }
+  }
+}

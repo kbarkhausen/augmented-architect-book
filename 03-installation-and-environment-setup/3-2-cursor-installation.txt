@@ -1,0 +1,1 @@
+Settings → Import from VS Code → Select items to import

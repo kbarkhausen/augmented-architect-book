@@ -1,0 +1,6 @@
+You: When a GitHub issue is labeled "ready", create a Linear task
+
+Agent:
+1. [MCP:GitHub] Set up webhook listener
+2. [MCP:Linear] Create task from issue data
+3. [MCP:Slack] Notify #dev-channel

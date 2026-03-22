@@ -1,0 +1,6 @@
+project/
+├── CLAUDE.md           # Claude Code
+├── .cursorrules        # Cursor
+├── .github/copilot-instructions.md  # Copilot
+├── .codex/rules.md     # Codex
+└── ... duplicate content everywhere

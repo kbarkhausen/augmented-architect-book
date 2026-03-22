@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "overrides": {
+      "production-access": false,
+      "delete-operations": false,
+      "external-api-calls": "ask"
+    }
+  }
+}

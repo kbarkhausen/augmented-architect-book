@@ -1,0 +1,8 @@
+Week 1: default mode
+  - Learn what Claude wants to do
+
+Week 2: auto mode with allowlist
+  - Auto-approve common operations
+
+Week 3: Customized patterns
+  - Add specific patterns you trust

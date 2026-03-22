@@ -1,0 +1,4 @@
+project/
+├── AGENTS.md           # Universal (many tools can read)
+├── CLAUDE.md           # Claude-specific additions (optional)
+└── .cursor/rules/      # Cursor-specific additions (optional)

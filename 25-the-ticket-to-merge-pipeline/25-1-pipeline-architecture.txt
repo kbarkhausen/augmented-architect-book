@@ -1,0 +1,21 @@
+┌─────────────────────────────────────────────────────────────┐
+│                  TICKET-TO-MERGE PIPELINE                   │
+│                   [Conceptual Diagram]                      │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  📋 ISSUE          🤖 IMPLEMENT        🧪 TEST              │
+│  ─────────         ───────────        ─────                 │
+│  Created           Agent picks up     Automated tests       │
+│  Labeled           Writes code        Coverage check        │
+│  Prioritized       Writes tests       Quality gates         │
+│                                                             │
+│         │                │                 │                │
+│         ▼                ▼                 ▼                │
+│                                                             │
+│  📝 PR CREATE      👁️ REVIEW          ✅ MERGE              │
+│  ───────────      ──────              ─────                 │
+│  Auto-generated   AI review           Auto-merge            │
+│  Linked to issue  Human review        Close issue           │
+│  Description      (if required)       Notify team           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

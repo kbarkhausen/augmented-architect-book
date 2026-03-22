@@ -1,0 +1,12 @@
+company-ai-config/
+├── AGENTS.md              # Company-wide instructions
+├── claude/
+│   ├── CLAUDE.md          # Shared Claude config
+│   └── rules/
+│       ├── security.md    # Security standards
+│       └── compliance.md  # Compliance rules
+├── cursor/
+│   └── rules/
+│       └── team.mdc       # Team conventions
+└── skills/
+    └── internal/          # Company-specific capabilities

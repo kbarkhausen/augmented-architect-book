@@ -1,0 +1,17 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    AGENT MODE CAPABILITIES                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  📖 READ           ✏️ WRITE          🔧 EXECUTE            │
+│  • Any file        • Create files    • Shell commands      │
+│  • Directories     • Edit files      • npm/pnpm/yarn       │
+│  • Documentation   • Delete files    • Tests               │
+│  • Git history     • Move/rename     • Build tools         │
+│                                                             │
+│  🔄 ITERATE        🧠 REASON         📊 REPORT             │
+│  • Fix errors      • Plan approach   • Progress updates    │
+│  • Retry failures  • Research code   • Summary of changes  │
+│  • Refine based    • Ask questions   • Next steps          │
+│    on feedback                                              │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

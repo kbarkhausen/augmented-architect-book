@@ -1,0 +1,6 @@
+1. Open Composer (Cmd+I)
+2. Write your request
+3. Add context with @ references
+4. Choose mode (Edit or Agent)
+5. Review proposed changes
+6. Accept or refine

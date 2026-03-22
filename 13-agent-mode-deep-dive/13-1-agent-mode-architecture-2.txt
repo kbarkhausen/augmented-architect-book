@@ -1,0 +1,13 @@
+You: "Implement user authentication with JWT"
+
+Agent:
+1. 🔍 Reads existing code structure
+2. 📋 Plans implementation approach
+3. 📝 Creates auth service file
+4. 📝 Creates auth middleware  
+5. ✏️ Updates route files
+6. 📝 Creates token utilities
+7. 📝 Writes unit tests
+8. 🔧 Runs tests
+9. 🔧 Fixes failing tests
+10. ✅ Reports completion with summary

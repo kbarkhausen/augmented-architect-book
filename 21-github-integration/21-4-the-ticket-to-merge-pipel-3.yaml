@@ -1,0 +1,18 @@
+# Add required reviewers for sensitive paths
+on:
+  pull_request:
+    paths:
+      - 'src/auth/**'      # Security-sensitive
+      - 'src/billing/**'   # Money-sensitive
+      - 'migrations/**'    # Database changes
+
+jobs:
+  require-human-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request Human Review
+        run: |
+          gh pr edit ${{ github.event.pull_request.number }} \
+            --add-reviewer security-team
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

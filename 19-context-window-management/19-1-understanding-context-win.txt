@@ -1,0 +1,25 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    CONTEXT WINDOW                           │
+│                  [Conceptual Diagram]                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  System Instructions    ~2,000 tokens                       │
+│  ├── Tool definitions                                       │
+│  ├── Safety guidelines                                      │
+│  └── Base behavior                                          │
+│                                                             │
+│  Project Context        ~500-3,000 tokens                   │
+│  ├── CLAUDE.md / Rules                                      │
+│  ├── Memory                                                 │
+│  └── @ references                                           │
+│                                                             │
+│  Conversation History   ~variable                           │
+│  ├── Previous messages                                      │
+│  ├── Tool calls and results                                 │
+│  └── File contents read                                     │
+│                                                             │
+│  Current Prompt         ~variable                           │
+│                                                             │
+│  Reserved for Response  ~variable                           │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

@@ -1,0 +1,18 @@
+# Conceptual team-rules.yaml
+rules:
+  - name: Security Standards
+    content: |
+      # Security Requirements
+      - Never log sensitive data (passwords, tokens, PII)
+      - Use parameterized queries (never string concat)
+      - Validate all user input
+      - Sanitize output (XSS prevention)
+    required: true  # Members cannot disable
+    
+  - name: Code Style
+    content: |
+      # Style Guide
+      - 2 space indentation
+      - Single quotes for strings
+      - Trailing commas in multiline
+    required: false  # Members can override

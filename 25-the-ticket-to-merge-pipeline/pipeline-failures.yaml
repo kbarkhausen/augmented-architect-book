@@ -1,0 +1,20 @@
+# Post-merge analysis
+analyze:
+  needs: merge
+  steps:
+    - name: Analyze Implementation Quality
+      uses: anthropics/claude-code-action@v1
+      with:
+        mode: analyze
+        instructions: |
+          Review the implementation for issue #${{ github.event.issue.number }}
+          
+          Provide feedback on:
+          1. Code quality score (1-10)
+          2. Areas for improvement
+          3. Patterns to add to CLAUDE.md
+          
+    - name: Update Guidelines
+      if: steps.analyze.outputs.new_patterns
+      run: |
+        # Create PR to update CLAUDE.md with new learnings

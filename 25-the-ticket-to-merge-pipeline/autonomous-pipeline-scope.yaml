@@ -1,0 +1,17 @@
+rollback:
+  if: failure()
+  steps:
+    - name: Revert Merge
+      run: |
+        gh pr revert ${{ env.PR_NUMBER }} --body "Auto-rollback due to pipeline failure"
+        
+    - name: Reopen Issue
+      run: |
+        gh issue reopen ${{ github.event.issue.number }} \
+          --comment "⚠️ Auto-implementation failed. Needs manual attention."
+          
+    - name: Alert Team
+      run: |
+        # High-priority alert
+        curl -X POST ${{ secrets.PAGERDUTY_WEBHOOK }} \
+          -d '{"summary": "Auto-implementation failed for #${{ github.event.issue.number }}"}'

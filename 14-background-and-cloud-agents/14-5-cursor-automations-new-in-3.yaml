@@ -1,0 +1,14 @@
+name: "Issue Triage"
+trigger:
+  type: github_issue
+  events: [opened]
+  
+action:
+  instructions: |
+    Read the issue. Determine:
+    - Category (bug, feature, question)
+    - Priority (P0-P3)
+    - Component (frontend, backend, infra)
+    
+    Add appropriate labels.
+    If bug, request reproduction steps if missing.

@@ -1,0 +1,5 @@
+cursor.com/automations
+├── [Automation Name] ← Click to view/edit
+│   ├── Runs          ← History of executions
+│   ├── Settings      ← Configuration
+│   └── Logs          ← Detailed output

@@ -1,0 +1,35 @@
+
+## Coding Standards
+
+### Naming
+- Files: kebab-case (user-service.ts)
+- Components: PascalCase (UserCard.tsx)
+- Functions/variables: camelCase
+- Constants: SCREAMING_SNAKE_CASE
+
+### Patterns
+- Repository pattern for data access
+- Service layer for business logic
+- Functional React components with hooks
+- Use Result<T, E> for error handling (see packages/shared/result.ts)
+
+### Testing
+- Every service method needs unit tests
+- React components need rendering tests
+- E2E tests for critical user flows
+
+## Current Focus (Updated: March 2026)
+- Implementing GitHub issue sync
+- Adding real-time updates via WebSockets
+- Issue #12: User preferences page
+
+## Known Issues
+- Prisma has issues with JSON fields in tests (use plain objects)
+- Hot reload sometimes fails on API; restart with `pnpm dev:api`
+
+## Do NOT
+- Do not modify packages/shared without updating both apps
+- Do not use `any` type - use `unknown` if truly needed
+- Do not write console.log - use the logger service
+- Do not commit .env files
+- Do not add dependencies without checking for conflicts

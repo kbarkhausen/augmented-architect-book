@@ -1,0 +1,13 @@
+// ✅ Good: Use environment variables
+{
+  "env": {
+    "API_KEY": "${MY_API_KEY}"
+  }
+}
+
+// ❌ Bad: Hardcoded secrets
+{
+  "env": {
+    "API_KEY": "sk-1234567890abcdef"
+  }
+}

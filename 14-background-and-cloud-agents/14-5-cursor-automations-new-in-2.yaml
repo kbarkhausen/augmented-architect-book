@@ -1,0 +1,16 @@
+name: "CI Fix Bot"
+trigger:
+  type: github_check
+  events: [failed]
+  
+action:
+  instructions: |
+    Analyze the CI failure log.
+    If it's a fixable issue:
+    1. Create a fix
+    2. Push to the failing branch
+    3. Comment explaining the fix
+    
+    If it requires human judgment:
+    1. Comment with analysis
+    2. Tag @oncall

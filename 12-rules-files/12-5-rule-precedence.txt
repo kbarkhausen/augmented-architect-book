@@ -1,0 +1,4 @@
+.cursor/rules/
+├── core.mdc (alwaysApply: true)     # Base rules
+├── typescript.mdc (globs: *.ts)      # TypeScript files
+└── api.mdc (globs: src/api/**/*.ts)  # API files specifically

@@ -1,0 +1,1 @@
+Cmd+Shift+P → "Start Cloud Agent"

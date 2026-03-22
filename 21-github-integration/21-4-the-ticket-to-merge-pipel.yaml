@@ -1,0 +1,41 @@
+# .github/workflows/claude-implement.yml
+# Workflow 1: Implement on issue label
+name: Claude Auto-Implement
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  implement:
+    if: github.event.label.name == 'autonomous'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Implement Feature
+        uses: anthropics/claude-code-action@v1
+        id: implement
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          mode: implement
+          issue_number: ${{ github.event.issue.number }}
+          create_branch: true
+          
+      - name: Run Tests
+        run: |
+          npm ci
+          npm test
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: feature/${{ github.event.issue.number }}
+          title: "feat: ${{ github.event.issue.title }}"
+          body: |
+            Closes #${{ github.event.issue.number }}
+            
+            Implemented by Claude Code.

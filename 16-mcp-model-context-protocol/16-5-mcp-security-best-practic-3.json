@@ -1,0 +1,11 @@
+{
+  "github": {
+    "env": {
+      // ❌ Bad: Full access token
+      // "GITHUB_TOKEN": "${GITHUB_ADMIN_TOKEN}"
+      
+      // ✅ Good: Scoped token (repo read + issues write only)
+      "GITHUB_TOKEN": "${GITHUB_ISSUES_TOKEN}"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+1. Check agent logs for error details
+2. Identify root cause (prompt? environment? code?)
+3. Rollback if needed (checkpoint or git)
+4. Refine approach
+5. Restart with better context

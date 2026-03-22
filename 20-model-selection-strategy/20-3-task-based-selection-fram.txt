@@ -1,0 +1,25 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    MODEL SELECTION                          │
+│                  [Decision Framework]                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  COMPLEXITY                                                 │
+│  ───────────                                                │
+│  Simple (boilerplate)    → Sonnet/Grok (fast)              │
+│  Medium (features)       → Sonnet (balanced)                │
+│  Complex (architecture)  → Opus (thorough)                  │
+│  Critical (security)     → Opus (careful)                   │
+│                                                             │
+│  CONTEXT SIZE                                               │
+│  ────────────                                               │
+│  Small (<50K)            → Any model                        │
+│  Medium (50-150K)        → Sonnet, GPT-5                    │
+│  Large (>150K)           → Gemini                           │
+│                                                             │
+│  BUDGET                                                     │
+│  ──────                                                     │
+│  Tight                   → Sonnet, Grok, Local              │
+│  Normal                  → Sonnet + occasional Opus         │
+│  Flexible                → Opus when helpful                │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

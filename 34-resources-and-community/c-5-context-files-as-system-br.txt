@@ -1,0 +1,15 @@
+.
+├── CLAUDE.md              # Claude Code reads this first
+├── AGENTS.md              # Any AI tool reads this
+├── .cursorrules           # Cursor-specific rules
+├── .cursor/
+│   └── rules/
+│       ├── general.mdc    # Always-on rules
+│       ├── testing.mdc    # Auto-loads for test files
+│       └── react.mdc      # Auto-loads for .tsx files
+├── .github/
+│   └── copilot-instructions.md  # GitHub Copilot instructions
+└── .claude/
+    ├── settings.json      # Claude Code settings
+    ├── commands/          # Custom slash commands
+    └── skills/            # Installed capabilities

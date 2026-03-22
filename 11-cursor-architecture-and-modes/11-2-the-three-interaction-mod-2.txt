@@ -1,0 +1,17 @@
+[Select getUserById function]
+Cmd+K: "Add input validation and proper error handling"
+
+Cursor shows diff:
+- export async function getUserById(id) {
++ export async function getUserById(id: string): Promise<User | null> {
++   if (!id || typeof id !== 'string') {
++     throw new ValidationError('Invalid user ID');
++   }
++   
+    try {
+      return await db.user.findUnique({ where: { id } });
++   } catch (error) {
++     logger.error('Failed to fetch user', { id, error });
++     throw new DatabaseError('Failed to fetch user');
+    }
+  }

@@ -1,0 +1,38 @@
+┌─────────────────────────────────────────────────────────────┐
+│                   MEMORY ARCHITECTURE                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │           LAYER 1: CHAT MEMORY                       │   │
+│  │           (Automatic, Session-Based)                 │   │
+│  ├─────────────────────────────────────────────────────┤   │
+│  │  • Conversation history within session              │   │
+│  │  • Web/Desktop: Persists across chats               │   │
+│  │  • Claude Code: Per-session, ephemeral              │   │
+│  │  • No setup required                                 │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                           │                                 │
+│                           ▼                                 │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │           LAYER 2: CONTEXT FILES                     │   │
+│  │           (Manual, Project-Based)                    │   │
+│  ├─────────────────────────────────────────────────────┤   │
+│  │  • CLAUDE.md — Project instructions                 │   │
+│  │  • AGENTS.md — Cross-tool standards                 │   │
+│  │  • .cursorrules — Cursor-specific                   │   │
+│  │  • memory-bank/ — Long-term project memory          │   │
+│  │  • Versioned in git, shared with team               │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                           │                                 │
+│                           ▼                                 │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │           LAYER 3: AUTO MEMORY                       │   │
+│  │           (Automatic, User-Based)                    │   │
+│  ├─────────────────────────────────────────────────────┤   │
+│  │  • Claude learns preferences over time              │   │
+│  │  • "Remember: always use pnpm"                      │   │
+│  │  • Personal, not project-specific                   │   │
+│  │  • New in Claude Code 2.1.7                         │   │
+│  └─────────────────────────────────────────────────────┘   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

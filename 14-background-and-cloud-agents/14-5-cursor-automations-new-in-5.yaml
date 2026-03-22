@@ -1,0 +1,3 @@
+action:
+  memory: my-project-memory
+  memory_behavior: read_write

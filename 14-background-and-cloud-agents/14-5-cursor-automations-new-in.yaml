@@ -1,0 +1,23 @@
+# Example: Auto-review PRs
+name: "PR Code Review"
+trigger:
+  type: github_pr
+  events: [opened, synchronize]
+  filters:
+    base_branch: main
+    
+action:
+  model: claude-sonnet-4.6
+  instructions: |
+    Review this PR for:
+    - Code quality and best practices
+    - Potential bugs or security issues
+    - Test coverage gaps
+    - Documentation needs
+    
+    Post review as PR comment.
+    
+  mcp_servers:
+    - github
+    
+  memory: project-memory  # Learns from past reviews

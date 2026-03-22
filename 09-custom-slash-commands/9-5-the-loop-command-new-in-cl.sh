@@ -1,0 +1,1 @@
+> /loop every 30 minutes for 3 hours: Check test status and fix any failures

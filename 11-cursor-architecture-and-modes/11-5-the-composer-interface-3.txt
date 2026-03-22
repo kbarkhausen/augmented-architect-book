@@ -1,0 +1,7 @@
+Add JWT refresh token support to the auth system:
+1. Create refreshToken endpoint at POST /auth/refresh
+2. Store refresh tokens in Redis with 7-day expiry
+3. Update login to return both access and refresh tokens
+4. Add middleware to handle token refresh automatically
+
+Follow patterns in @src/api/auth.ts

@@ -1,0 +1,6 @@
+.cursor/rules/
+├── core.mdc          # Universal rules (alwaysApply: true)
+├── orders.mdc        # Orders domain
+├── payments.mdc      # Payments domain
+├── users.mdc         # User management
+└── admin.mdc         # Admin features

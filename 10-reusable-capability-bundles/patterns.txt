@@ -1,0 +1,10 @@
+
+### Mock Patterns
+- Use dependency injection for mockable code
+- Prefer explicit mocks over auto-mocking
+- Reset mocks between tests
+
+### Coverage Goals
+- Minimum 80% line coverage
+- 100% coverage for critical paths
+- Integration tests for API endpoints

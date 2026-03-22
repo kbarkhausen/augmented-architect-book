@@ -1,0 +1,1 @@
+claude config set autoMemory.enabled true

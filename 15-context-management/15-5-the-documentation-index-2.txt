@@ -1,0 +1,3 @@
+@Docs Next.js app router dynamic routes
+
+How do I create a dynamic route for user profiles?

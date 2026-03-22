@@ -1,0 +1,4 @@
+.cursor/plans/
+├── 2026-03-21-user-preferences.md
+├── 2026-03-18-payment-integration.md
+└── 2026-03-15-auth-refactor.md

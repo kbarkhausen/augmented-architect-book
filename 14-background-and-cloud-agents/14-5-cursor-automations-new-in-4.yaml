@@ -1,0 +1,14 @@
+name: "Weekly Health Check"
+trigger:
+  type: schedule
+  cron: "0 9 * * 1"  # Monday 9 AM
+  
+action:
+  instructions: |
+    Run codebase health analysis:
+    - Find unused exports
+    - Check for outdated dependencies
+    - Identify code duplication
+    - Generate tech debt report
+    
+    Post summary to #engineering Slack.

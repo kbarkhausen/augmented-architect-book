@@ -1,0 +1,5 @@
+.claude/
+└── skills/
+    └── my-capability/
+        ├── SKILL.md
+        └── ...

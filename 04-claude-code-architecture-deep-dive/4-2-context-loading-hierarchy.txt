@@ -1,0 +1,22 @@
+1. System prompt (built into Claude Code)
+         │
+         ▼
+2. Global user config (~/.claude/CLAUDE.md)
+         │
+         ▼
+3. Organization config (if enterprise)
+         │
+         ▼
+4. Ancestor CLAUDE.md files (walking up from cwd)
+         │
+         ▼
+5. Project CLAUDE.md (in cwd)
+         │
+         ▼
+6. Scoped rules (.claude/rules/*.md matching current file)
+         │
+         ▼
+7. Session memory (from current conversation)
+         │
+         ▼
+8. User's current prompt

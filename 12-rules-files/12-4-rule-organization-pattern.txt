@@ -1,0 +1,6 @@
+.cursor/rules/
+├── api.mdc           # API layer patterns
+├── services.mdc      # Service layer patterns
+├── repositories.mdc  # Data access patterns
+├── components.mdc    # UI components
+└── testing.mdc       # Test patterns

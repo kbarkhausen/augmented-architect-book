@@ -1,0 +1,25 @@
+# .github/workflows/claude-review.yml
+name: Claude PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for diff
+          
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          mode: review
+          review_criteria: |
+            - Check for security vulnerabilities
+            - Verify error handling is comprehensive
+            - Ensure tests are included for new code
+            - Check for breaking changes
+            - Verify documentation is updated

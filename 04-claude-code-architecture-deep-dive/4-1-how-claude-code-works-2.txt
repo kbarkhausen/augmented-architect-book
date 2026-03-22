@@ -1,0 +1,6 @@
+1. Check permission mode (see Chapter 6)
+2. If auto-allowed: execute immediately
+3. If requires approval: show user, wait for Y/n
+4. Execute tool
+5. Return result to Claude
+6. Claude processes result, decides next action

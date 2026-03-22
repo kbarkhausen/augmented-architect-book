@@ -1,0 +1,8 @@
+Fix the token refresh issue.
+
+Relevant files:
+- @src/api/auth.ts (the buggy endpoint)
+- @src/middleware/auth.ts (token verification)
+- @src/lib/jwt.ts (token utilities)
+
+The bug: refresh tokens aren't being validated properly

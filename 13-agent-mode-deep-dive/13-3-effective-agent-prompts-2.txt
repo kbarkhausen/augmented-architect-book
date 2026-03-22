@@ -1,0 +1,19 @@
+Implement JWT authentication for the API:
+
+Intent: Add secure user login/logout with token refresh
+
+Details:
+- POST /auth/login - Accept email/password, return tokens
+- POST /auth/logout - Invalidate refresh token
+- POST /auth/refresh - Exchange refresh for new access token
+- Access tokens expire in 15 minutes
+- Refresh tokens expire in 7 days, stored in Redis
+
+Examples:
+- Follow the error handling pattern in @src/api/users.ts
+- Use the validation middleware from @src/middleware/validate.ts
+
+Acceptance:
+- All endpoints have tests
+- Tests pass
+- API documentation updated

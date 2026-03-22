@@ -1,0 +1,13 @@
+metrics:
+  steps:
+    - name: Record Metrics
+      run: |
+        echo "pipeline_duration=${{ job.duration }}" >> metrics.txt
+        echo "tests_passed=${{ steps.test.outputs.passed }}" >> metrics.txt
+        echo "coverage=${{ steps.coverage.outputs.percent }}" >> metrics.txt
+        
+    - name: Send to Dashboard
+      run: |
+        # Send to your metrics system (DataDog, Grafana, etc.)
+        curl -X POST ${{ secrets.METRICS_ENDPOINT }} \
+          -d @metrics.txt

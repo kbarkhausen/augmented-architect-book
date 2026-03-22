@@ -1,0 +1,52 @@
+# azure-pipelines-claude.yml
+trigger: none
+
+resources:
+  webhooks:
+    - webhook: workitem_updated
+      connection: AzureDevOpsWebhook
+      filters:
+        - path: resource.fields.System.State
+          value: Ready
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  - group: claude-secrets
+
+steps:
+  - checkout: self
+    persistCredentials: true
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.x'
+
+  - script: |
+      npm install -g @anthropic-ai/claude-code
+    displayName: 'Install Claude Code'
+
+  - script: |
+      claude --dangerously-skip-permissions \
+        "Implement work item $(workItemId). Follow CLAUDE.md. Create tests. Push changes."
+    displayName: 'Claude Implementation'
+    env:
+      ANTHROPIC_API_KEY: $(ANTHROPIC_API_KEY)
+
+  - script: |
+      git config user.email "claude@devops.local"
+      git config user.name "Claude Code"
+      git push origin HEAD:refs/heads/feature/$(workItemId)
+    displayName: 'Push Changes'
+    
+  - script: |
+      az repos pr create \
+        --repository $(Build.Repository.Name) \
+        --source-branch feature/$(workItemId) \
+        --target-branch main \
+        --title "$(workItemTitle)" \
+        --work-items $(workItemId)
+    displayName: 'Create PR'
+    env:
+      AZURE_DEVOPS_EXT_PAT: $(System.AccessToken)

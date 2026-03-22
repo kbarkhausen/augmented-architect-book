@@ -1,0 +1,32 @@
+# .github/workflows/claude-review-merge.yml
+# Workflow 2: Review and merge on PR creation
+name: Claude Review and Merge
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  review-and-merge:
+    # Only auto-review PRs from the implement workflow
+    if: startsWith(github.head_ref, 'feature/')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: AI Code Review
+        uses: anthropics/claude-code-action@v1
+        id: review
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          mode: review
+          
+      # Auto-merge if review passes (adapt condition to actual outputs)
+      - name: Auto-Merge
+        if: success()  # Adapt: check actual review output
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --squash --auto --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

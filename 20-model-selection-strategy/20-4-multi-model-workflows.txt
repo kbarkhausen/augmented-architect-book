@@ -1,0 +1,8 @@
+1. Opus: Design architecture
+   → Document in decisionLog.md
+
+2. Sonnet: Implement design
+   → Faster, cheaper iterations
+
+3. Opus: Final review
+   → Verify quality, catch edge cases

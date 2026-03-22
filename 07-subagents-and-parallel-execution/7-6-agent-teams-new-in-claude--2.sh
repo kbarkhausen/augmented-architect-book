@@ -1,0 +1,1 @@
+claude config set agentTeams.enabled true

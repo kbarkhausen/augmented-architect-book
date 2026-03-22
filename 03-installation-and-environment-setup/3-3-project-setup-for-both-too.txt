@@ -1,0 +1,20 @@
+your-project/
+├── .claude/                    # Claude Code config
+│   ├── rules/                  # Scoped rules
+│   │   ├── backend.md
+│   │   └── frontend.md
+│   └── hooks/                  # Automation hooks
+│       └── pre-commit.js
+├── .cursor/                    # Cursor config
+│   ├── rules/                  # Cursor rules
+│   │   ├── core.mdc
+│   │   └── testing.mdc
+│   ├── mcp.json               # MCP servers
+│   └── settings.json          # Cursor settings
+├── CLAUDE.md                   # Claude Code instructions
+├── AGENTS.md                   # Universal agent instructions
+├── memory-bank/                # Persistent context
+│   ├── productContext.md
+│   ├── activeContext.md
+│   └── progress.md
+└── ... your code ...

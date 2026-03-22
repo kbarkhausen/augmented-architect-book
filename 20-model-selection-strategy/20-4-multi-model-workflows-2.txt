@@ -1,0 +1,5 @@
+1. Sonnet: Generate initial code
+   → Quick first draft
+
+2. Opus: Refine critical sections
+   → Better error handling, edge cases

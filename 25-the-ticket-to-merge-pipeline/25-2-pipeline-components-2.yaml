@@ -1,0 +1,23 @@
+implement:
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Read Issue Context
+      id: context
+      run: |
+        gh issue view ${{ github.event.issue.number }} --json title,body,labels
+        
+    - name: Claude Implements
+      uses: anthropics/claude-code-action@v1
+      with:
+        mode: implement
+        instructions: |
+          Implement issue #${{ github.event.issue.number }}
+          
+          Requirements:
+          ${{ steps.context.outputs.body }}
+          
+          Follow CLAUDE.md guidelines.
+          Write tests for new code.
+          Update documentation if needed.

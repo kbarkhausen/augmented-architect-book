@@ -1,0 +1,1 @@
+Cmd+Shift+P → "Add to Memory"

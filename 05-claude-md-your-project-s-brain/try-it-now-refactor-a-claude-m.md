@@ -1,0 +1,3 @@
+# CLAUDE.md
+
+This is a TypeScript project using React and Node. We use ESLint and Prettier. TypeScript should be strict. Always write tests. Use functional components. Never use class components. Prefer arrow functions. Use async/await not promises. Don't use any. Document everything. Follow SOLID principles. Use dependency injection. Keep functions small. Don't repeat yourself. Write clean code. Be careful. Test everything. Don't break things. Use Git properly. Make small commits. Write good commit messages. Don't push to main. Create PRs. Get reviews. Fix bugs quickly. Don't introduce regressions. Performance matters. Security matters. Accessibility matters. Everything matters.

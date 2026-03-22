@@ -1,0 +1,6 @@
+.cursor/rules/
+├── typescript.mdc    # TypeScript standards
+├── react.mdc         # React patterns
+├── prisma.mdc        # Database patterns
+├── tailwind.mdc      # Styling rules
+└── testing.mdc       # Test frameworks

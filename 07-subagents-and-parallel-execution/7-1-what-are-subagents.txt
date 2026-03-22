@@ -1,0 +1,1 @@
+Task A (5 min) → Task B (5 min) → Task C (5 min) = 15 min total

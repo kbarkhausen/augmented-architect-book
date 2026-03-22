@@ -1,0 +1,6 @@
+memory-bank/
+├── productContext.md     # What is this project?
+├── activeContext.md      # What are we working on now?
+├── progress.md           # What's done? What's left?
+├── decisionLog.md        # Why did we choose X over Y?
+└── techContext.md        # Technical details and patterns

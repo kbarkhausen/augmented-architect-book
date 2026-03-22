@@ -1,0 +1,40 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    CLAUDE CODE LOOP                         │
+│                  (Conceptual Diagram)                       │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  1. RECEIVE INPUT (user prompt or system event)            │
+│         │                                                   │
+│         ▼                                                   │
+│  2. LOAD CONTEXT                                           │
+│     - CLAUDE.md (project instructions)                     │
+│     - Rules (from .claude/rules/)                          │
+│     - Memory (from previous sessions)                      │
+│     - Relevant file contents                               │
+│         │                                                   │
+│         ▼                                                   │
+│  3. PLAN (internal reasoning)                              │
+│     - What tools do I need?                                │
+│     - What's the sequence of operations?                   │
+│     - What files need to change?                           │
+│         │                                                   │
+│         ▼                                                   │
+│  4. EXECUTE (tool calls)                                   │
+│     - Read files                                           │
+│     - Write/Edit files                                     │
+│     - Run shell commands                                   │
+│     - Spawn subagents                                      │
+│     - Call MCP servers                                     │
+│         │                                                   │
+│         ▼                                                   │
+│  5. EVALUATE                                               │
+│     - Did the action succeed?                              │
+│     - Do I need to retry/adjust?                           │
+│     - Should I continue or stop?                           │
+│         │                                                   │
+│         ▼                                                   │
+│  6. RESPOND or CONTINUE                                    │
+│     - If done: Report results to user                      │
+│     - If not: Loop back to step 3                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘

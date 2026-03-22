@@ -1,0 +1,9 @@
+You: Add a "last_login" field to the users table
+
+Agent:
+1. [MCP:Postgres] Check current schema
+2. [MCP:Postgres] Generate migration
+3. [Local] Write migration file
+4. [Local] Update TypeScript types
+5. [Local] Run migration
+6. [MCP:Postgres] Verify schema

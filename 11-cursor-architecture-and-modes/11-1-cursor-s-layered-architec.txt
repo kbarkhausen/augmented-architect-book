@@ -1,0 +1,18 @@
+┌─────────────────────────────────────────────────────────────┐
+│                    CURSOR IDE                               │
+│                  [Conceptual Diagram]                       │
+├─────────────────────────────────────────────────────────────┤
+│  ┌─────────────────┐  ┌─────────────────┐  ┌────────────┐  │
+│  │  Tab Complete   │  │  Chat Panel     │  │  Composer  │  │
+│  │  (inline)       │  │  (Cmd+L)        │  │  (Cmd+I)   │  │
+│  └─────────────────┘  └─────────────────┘  └────────────┘  │
+├─────────────────────────────────────────────────────────────┤
+│                    CURSOR AI LAYER                          │
+│  • Context Engine (semantic indexing of codebase)          │
+│  • Mode Manager (Ask/Edit/Agent routing)                   │
+│  • Model Router (Claude, GPT, Gemini, Grok, local)         │
+│  • Memory System (persistent context across sessions)       │
+├─────────────────────────────────────────────────────────────┤
+│                    VS CODE BASE                             │
+│  Editor, Terminal, Git Integration, Extensions              │
+└─────────────────────────────────────────────────────────────┘

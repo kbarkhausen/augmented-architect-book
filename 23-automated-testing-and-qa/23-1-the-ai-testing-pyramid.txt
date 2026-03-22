@@ -1,0 +1,12 @@
+                    ┌─────────────┐
+                    │    E2E      │  AI-generated Playwright tests
+                    │   Tests     │  Full user journey coverage
+                   ─┴─────────────┴─
+                  ┌─────────────────┐
+                  │  Integration    │  AI-generated API tests
+                  │    Tests        │  Service interaction tests
+                 ─┴─────────────────┴─
+                ┌───────────────────────┐
+                │     Unit Tests        │  AI-generated per function
+                │                       │  High coverage, fast feedback
+               ─┴───────────────────────┴─

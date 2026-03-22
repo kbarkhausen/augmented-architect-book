@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "restricted-server": {
+      "command": "...",
+      "networkAccess": ["api.mycompany.com"],
+      "fileAccess": ["${workspaceFolder}"]
+    }
+  }
+}

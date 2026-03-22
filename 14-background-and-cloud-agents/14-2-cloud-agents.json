@@ -1,0 +1,15 @@
+{
+  "environment": {
+    "node": "20",
+    "install": "pnpm install",
+    "test": "pnpm test"
+  },
+  "secrets": {
+    "DATABASE_URL": "from-vault",
+    "API_KEY": "from-vault"
+  },
+  "permissions": {
+    "network": ["api.example.com"],
+    "filesystem": "workspace-only"
+  }
+}
