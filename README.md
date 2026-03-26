@@ -70,7 +70,7 @@ cat 05-claudemd-your-projects-brain/claude-md-template.md | xclip -selection cli
 
 ## Website
 
-Visit [augmented-architect.ai](https://augmented-architect.ai) for:
+Visit [ai-augmented-architect.com](https://ai-augmented-architect.com) for:
 - Searchable code snippets
 - Video tutorials
 - Latest changelog
